@@ -1,17 +1,24 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
 ### Date created
-Include the date you created this project and README file.
+This project was created on 8th October, 2023
 
 ### Project Title
-Replace the Project Title
+US Bikeshare investigative analysis
 
 ### Description
-Describe what your project is about and what it does
+This project investigates the US bikeshare rental services for the three cities of Chicago, New York City, and Washington. The analysis uses the python pandas and numpy libraries to answer the following questions:
+
+* The most recent times of travel (month, day of week, start hour)
+* The most popular stations and trip (most commonly used start station, most commonly used end station, etc.)
+* The total and average trip duration
+* Count of user types (subscribers, customers) and gender
 
 ### Files used
-Include the files used
+The following files were included. The files contain the rental data for the months of January to July of 2007.
+* chicago.csv
+* new_york_city.csv
+* washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+...
 
