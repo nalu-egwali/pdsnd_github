@@ -1,7 +1,8 @@
 import time
 import pandas as pd
 import sys 
-#import numpy as np
+import numpy as np
+from tabulate import tabulate
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -192,27 +193,13 @@ def user_stats(df):
 
 #show raw data in chuncks of 5 rows at a time
 def view_raw_data(df):
-    print('Would you like to see the raw data in 5 rows at a time?')
-    see_raw_data = input('Enter yes or no:').lower()
-    if see_raw_data == 'yes':
-        start_of_chunck, end_of_chunck = 0, 5
-        while True:
-            chunck = df.iloc[start_of_chunck : end_of_chunck, :]
-            print(chunck)
-            start_of_chunck += 5 
-            end_of_chunck += 5
-            print()
-
-            #check if we are at the end of the raw data
-            if(end_of_chunck - 5 > df.tail(1).index):
-                print('This is the end of the raw data')
-                break
-
-            #check if the user wants to keep viewing
-            print('Enter yes to continue viewing, no to stop viewing ')
-            answer = input('yes/no:').lower()
-            if answer == 'no':
-                break
+    i = 0
+    while True:
+        display_data = input('\nDo you want to view 5 rows of raw data? Please enter yes or no.\n')
+        if display_data.lower() != 'yes':
+            break
+        print(tabulate(df.iloc[np.arange(0+i,5+i)], headers ="keys"))
+        i+=5
 
 def main():
     try:
