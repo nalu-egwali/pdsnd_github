@@ -1,6 +1,6 @@
 
 ### Date created
-This project was created on 8th October, 2023
+8th October, 2023
 
 ### Project Title
 US Bikeshare investigative analysis
@@ -14,11 +14,11 @@ This project investigates the US bikeshare rental services for the three cities 
 * Count of user types (subscribers, customers) and gender
 
 ### Files used
-The following files were included. The files contain the rental data for the months of January to July of 2007.
+The following files were included. The files contain the rental data for the months of January to July of 2017.
 * chicago.csv
 * new_york_city.csv
 * washington.csv
 
 ### Credits
-...
+... _No references to external resources_
 
