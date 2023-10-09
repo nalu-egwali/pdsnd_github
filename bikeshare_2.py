@@ -30,6 +30,7 @@ def check_data_entry(prompt, valid_entries):
 
     except:
         print('There seems to be an issue with your input.')
+        sys.exit()
 
 def get_filters():
     """
